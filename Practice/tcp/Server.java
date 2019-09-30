@@ -7,7 +7,7 @@ class Server {
         ServerSocket server = new ServerSocket(6666);
         DataInputStream in = null;
         Socket socket = server.accept();
-        in = new DataInputStream(new BufferedInputStream(socket.getInputStream()));
+        in = new DataInputStream(socket.getInputStream());
 
         while (true) {
 
